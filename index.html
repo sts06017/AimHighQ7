@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>수수께끼</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+</head>
+<body>
+    <p>Q1</p>
+    <img src="images/Q7_1.png" alt="문제 이미지">
+    <img src="images/Q7_2.png">
+    <p></p>
+    <input type="text" id="answer" placeholder="정답을 입력하세요">
+    <button onclick="checkAnswer()">제출</button>
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById('answer').value.trim();
+            if (answer === '6') { // 정답을 '6'로 설정
+                window.location.href = 'QBTiCU7.html';
+            } else {
+                alert('틀렸습니다. 다시 시도해보세요.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -7,15 +7,23 @@
 </head>
 <body>
     <p>Q1</p>
-    <img src="images/Q7_1.png" alt="문제 이미지">
-    <img src="images/Q7_2.png">
+    <img src="images/Q7.jpeg" alt="문제 이미지">
     <p></p>
-    <input type="text" id="answer" placeholder="정답을 입력하세요">
+    <p>점수판의 정사각형들을 터치하면 색깔이 하양에서 초록으로 바뀐다.
+        양쪽 모두 지금은 58이 쓰여있지만, 
+        각각 정사각형 한 개씩을 눌러서 서로 다른 숫자를 나타낼 생각이다.
+        두 숫자의 차가 39가 되었다면 각각 어떤 숫자일까?</p>
+    <div>
+        <input type="text" id="answer1" placeholder="정답을 입력하세요">
+        <input type="text" id="answer2" placeholder="정답을 입력하세요">
+    </div>
+    
     <button onclick="checkAnswer()">제출</button>
     <script>
         function checkAnswer() {
-            var answer = document.getElementById('answer').value.trim();
-            if (answer === '6') { // 정답을 '6'로 설정
+            var answer1 = document.getElementById('answer1').value.trim();
+            var answer2 = document.getElementById('answer2').value.trim();
+            if ((answer1 === '98' && answer2 === '59') || (answer2 === '98' && answer1 === '59')) { // 정답을 '6'로 설정
                 window.location.href = 'QBTiCU7.html';
             } else {
                 alert('틀렸습니다. 다시 시도해보세요.');

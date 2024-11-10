@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <title>수수께끼</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <style>
+        .input-container {
+            display: flex;
+            gap: 10px; /* 요소 간 간격 조절 */
+        }
+        .input-container input {
+            flex: 1; /* 입력 필드의 너비를 균등하게 설정 */
+        }
+    </style>
 </head>
 <body>
     <p>Q7</p>
@@ -15,7 +24,7 @@
 각각 정사각형 한 개씩을 눌러서 서로 다른 숫자를 나타낼 생각이다.
 두 숫자의 차가 39가 되었다면 각각 어떤 숫자일까?
     </pre>
-    <div>
+    <div class="input-container">
         <input type="text" id="answer1" placeholder="정답을 입력하세요">
         <input type="text" id="answer2" placeholder="정답을 입력하세요">
     </div>
